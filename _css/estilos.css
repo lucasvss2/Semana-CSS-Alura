@@ -1,0 +1,43 @@
+body{
+/*   height: 100vh; */
+ /* fundo do site */ 
+  background-image: url("_images/fundo-main.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  /* fontes */
+  font-family: Calibri;
+  font-weight: bolder;
+}
+
+.menu li{
+  list-style: none;
+}
+.menu ul{
+  /* força tudo a virar coluna, ou seja, ficar uma ao lado do outro*/
+  display: flex;
+  /* formata o texto com espaços iguais entre os elementos
+  e em volta deles... diferente do seu irmão space-between que separa
+  com espaço igual entre os elementos mas ignora as bordas da pagina*/
+  justify-content: space-around;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #c18811;
+  text-decoration: underline;
+
+}
+
+.site-title,
+.site-subtitle{
+  margin-left: 40px;
+  text-align: left;
+}
+
+.site-subtitle{
+  font-style: italic;
+}
