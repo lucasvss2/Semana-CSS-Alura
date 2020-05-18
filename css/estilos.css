@@ -1,18 +1,66 @@
-body{
-/*   height: 100vh; */
- /* fundo do site */ 
-  background-image: url("images/fundo-main.jpg");
+/* atributos para tudo - soft reset do css*/
+* {
+  margin: 0;
+  padding: 0;
+  /* o border box na box-sizing ele começa a contar o elemento a partir da borda
+  da caixa */
+  box-sizing: border-box;
+}
+
+body {
+  /* fundo do site */
+  background-image: url("images/fundo-main.gif");
   background-repeat: no-repeat;
-  background-size: auto 100vh;
+  background-size: 100vw 100vh;
+  height: 100vh;
   /* fontes */
   font-family: Calibri;
   font-weight: bolder;
+  font-size: 12px;
+  color: #ce6503;
 }
 
-.menu li{
-  list-style: none;
+@media (max-width: 350px) {
+  body {
+    font-size: 10px;
+  }
 }
-.menu ul{
+@media (max-width: 300px) {
+  body {
+    font-size: 7.5px;
+  }
+}
+@media (max-width: 240px) {
+  body {
+    font-size: 5px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* div do titulo */
+div {
+  color: #ce6503;
+  font-family: garamond;
+  font-style: italic, bolder;
+  font-size: 2em;
+  text-shadow: 2px 2px black;
+}
+/* se a tela tiver ao menos 250px esses estilos serão carregados */
+
+/* menu */
+.menu {
+  background-color: seashell;
+  /* fixa o elemento na tela e sobre todos os outros elementos */
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+.menu ul {
   /* força tudo a virar coluna, ou seja, ficar uma ao lado do outro*/
   display: flex;
   /* formata o texto com espaços iguais entre os elementos
@@ -20,24 +68,45 @@ body{
   com espaço igual entre os elementos mas ignora as bordas da pagina*/
   justify-content: space-around;
 }
+.menu li {
+  list-style: none;
+}
 
-a{
+.menu a {
+  /* transforma a tag "a" que normalmente não quebra a linha em um bloco 
+  com essa propriedade de "quebrar a linha"*/
+  display: block;
+  padding: 5px 5px;
+}
+
+a {
   text-decoration: none;
-  color: black;
+  color: #ce6503;
 }
 
-a:hover{
-  color: #815c0d;
+a:hover {
   text-decoration: underline;
-
+  color: #aa5403;
 }
 
+@media (max-width: 220px) {
+  a {
+    font-size: 13px;
+  }
+}
+
+/* titulo */
 .site-title,
-.site-subtitle{
+.site-subtitle {
   margin-left: 40px;
-  text-align: left;
+  text-align: center;
 }
 
-.site-subtitle{
+.site-subtitle {
   font-style: italic;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
 }
