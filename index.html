@@ -2,17 +2,21 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
     <title>Lucas Siqueira</title>
   </head>
   <body>
     <header>
       <nav class="menu">
         <ul>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Portfólio</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
+          <li><a href="#port-title-one">Portfólio</a></li>
+          <li><a href="Contato.html">Contato</a></li>
         </ul>
       </nav>
       <div class="titles">
@@ -20,40 +24,37 @@
         <h2 class="site-subtitle">Jr. Frontend Developer</h2>
       </div>
     </header>
-    <section>
-      <h2>Portfólio</h2>
-      <figure>
-        <img
-          class="img-portfolio"
-          src="css/images/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
-          alt="eCommerce"
-        />
-        <figcaption>eCommerce</figcaption>
-      </figure>
-      <figure>
-        <img
-          class="img-portfolio"
-          src="css/images/mobile-creditos-nate-grant-unsplash.jpg"
-          alt=">Mobile"
-        />
-        <figcaption>Mobile</figcaption>
-      </figure>
-      <figure>
-        <img
-          class="img-portfolio"
-          src="css/images/webdesign-creditos-domenico-loia-unsplash.jpg"
-          alt="Web design"
-        />
-        <figcaption>Web design</figcaption>
-      </figure>
-      <figure>
-        <img
-          class="img-portfolio"
-          src="css/images/projpessoais-creditos-hal-gatewood-unsplash.jpg"
-          alt="Projetos pessoais"
-        />
-        <figcaption>Projetos pessoais</figcaption>
-      </figure>
+    <section class="portfolio">
+      <h2 class="port-Title" id="port-title-one">Portfólio</h2>
+      <div class="grid">
+
+        <figure class="figport">
+          <img
+            class="img-portfolio"
+            src="css/images/mobile-creditos-nate-grant-unsplash.jpg"
+            alt=">Mobile"
+          />
+          <figcaption><a href="Mobile.html">Mobile</a></figcaption>
+        </figure>
+        <figure>
+          <img
+            class="img-portfolio"
+            src="css/images/webdesign-creditos-domenico-loia-unsplash.jpg"
+            alt="Web design"
+          />
+          <figcaption><a href="Front-End.html">Front-End</a></figcaption>
+        </figure>
+        <figure>
+          <img
+            class="img-portfolio"
+            src="css/images/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+            alt="Projetos pessoais"
+          />
+          <figcaption id="captProjP">
+            <a href="Projetos-Pessoais.html">Projetos pessoais</a>
+          </figcaption>
+        </figure>
+      </div>
     </section>
   </body>
 </html>

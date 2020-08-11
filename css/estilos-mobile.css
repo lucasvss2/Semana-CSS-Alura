@@ -9,10 +9,7 @@
 
 body {
   /* fundo do site */
-  background-image: url("images/fundo-main.gif");
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  height: 100vh;
+
   /* fontes */
   font-family: Calibri;
   font-weight: bolder;
@@ -45,8 +42,10 @@ header {
 }
 /* div do titulo */
 .titles {
-  justify-content: center;
   color: #ce6503;
+  font-family: garamond;
+  font-style: italic, bolder;
+  font-size: 2em;
   text-shadow: 1px 1px gray;
   margin-bottom: 30px;
   margin-top: 10px;
@@ -54,25 +53,20 @@ header {
 /* se a tela tiver ao menos 250px esses estilos serão carregados */
 
 .portfolio {
-  height: 100vh;
-  box-sizing: border-box;
-  padding: 40px;
   text-align: center;
   font-family: 'Source Code Pro', monospace; 
   font-size: 14px;
   color: #ce6503;
   margin-bottom: 30px;
+  margin-top: 10px;
   text-shadow: none;
-
 }
 
 .port-Title{
-  margin-top: 30px;
   font-family: 'Press Start 2P', cursive;
   text-align: center;
-  margin-bottom: 10px;
-  font-size: 24px;
-  text-shadow: 1px 1px gray;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 /* menu */
 .menu {
@@ -118,48 +112,9 @@ a:hover {
 }
 
 /* titulo */
-.site-title,
-.site-subtitle {
-  margin-left: 40px;
-  text-align: center;
-}
+
 .site-title{
   font-family: 'Amatic SC', cursive;
   font-size: 60px;
-}
-
-.site-subtitle {
-  font-family: 'Amatic SC', cursive;
-  font-style: italic;
-  font-size: 25px;
-}
-
-.img-portfolio {
-  height: 180px;
-  width: 250px;
-  margin: 3px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.portfolio .grid{
-  display: grid;
-  gap: 2em;
-  justify-content: center;
-}
-@media(min-width: 560px){
-  .portfolio .grid{
-    grid-template-columns: 240px 240px ;
-    justify-content: center;
-  }
-
-}
-@media(min-width: 785px){
-  .portfolio .grid{
-    grid-template-columns: repeat(3, 240px);
-    justify-content: center;
-    height: calc(100vh - 30px - 30px - 10px);
-  }
-
 }
 
