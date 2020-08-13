@@ -13,6 +13,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   height: 100vh;
+  background-image: linear-gradient(-20vh);
   /* fontes */
   font-family: Calibri;
   font-weight: bolder;
@@ -49,7 +50,23 @@ header {
   color: #ce6503;
   text-shadow: 1px 1px gray;
   margin-bottom: 30px;
-  margin-top: 10px;
+  margin-top: 120px;
+
+  animation: linear 2s animacaoTitulo;
+
+}
+
+@keyframes animacaoTitulo{
+  0%{
+    transform: scale(0) translateY(-20vh);
+    opacity: 0;
+
+  }
+  100%{
+    transform: scale(1) translateY(0vh);
+    opacity: 1;
+
+  }
 }
 /* se a tela tiver ao menos 250px esses estilos serão carregados */
 .sobre,
@@ -69,13 +86,14 @@ header {
 .sobre h2,
 .contato h2,
 .portfolio h2{
-  margin-top: 30px;
+  margin-top: 15px;
   font-family: 'Press Start 2P', cursive;
   text-align: center;
   margin-bottom: 10px;
   font-size: 24px;
   text-shadow: 1px 1px gray;
 }
+
 /* menu */
 .menu {
   background-color: seashell;
@@ -101,6 +119,7 @@ header {
   com essa propriedade de "quebrar a linha"*/
   display: block;
   padding: 5px 5px;
+
 }
 
 a {
@@ -125,6 +144,7 @@ a:hover {
   margin-left: 40px;
   text-align: center;
 }
+
 .site-title{
   font-family: 'Amatic SC', cursive;
   font-size: 60px;
@@ -136,6 +156,7 @@ a:hover {
   font-size: 25px;
 }
 
+/* imagens portfolio */
 .img-portfolio {
   height: 180px;
   width: 250px;
@@ -144,11 +165,41 @@ a:hover {
   border-radius: 10px;
 }
 
+.img-portfolio:hover{
+  transform: scale(1.1);
+  transition: transform 1s;
+
+}
+
 .portfolio .grid{
   display: grid;
   gap: 2em;
   justify-content: center;
 }
+
+/* icones contato */
+.contato a{
+  font-size: 3em;
+  margin: 10px;
+}
+
+.contato a:active,
+.contato a:hover{
+  text-decoration: none;
+  color: #aa5403;
+  text-shadow: 0.5px 0.5px 2px black;
+  transition: color 1s, text-shadow 1s;
+
+}
+
+@media(min-width: 385px){
+  .contato .grid{
+    text-align: center;
+    grid-template-columns: 240px 240px ;
+    justify-content: center;
+  }
+}
+
 @media(min-width: 560px){
   .portfolio .grid{
     grid-template-columns: 240px 240px ;
@@ -156,6 +207,7 @@ a:hover {
   }
 
 }
+
 @media(min-width: 785px){
   .portfolio .grid{
     grid-template-columns: repeat(3, 240px);
