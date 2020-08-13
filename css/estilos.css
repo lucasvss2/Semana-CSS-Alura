@@ -52,6 +52,7 @@ header {
   margin-top: 10px;
 }
 /* se a tela tiver ao menos 250px esses estilos serão carregados */
+.sobre,
 .contato,
 .portfolio {
   min-height: 100vh;
@@ -65,8 +66,9 @@ header {
   text-shadow: none;
 
 }
+.sobre h2,
 .contato h2,
-.port-Title{
+.portfolio h2{
   margin-top: 30px;
   font-family: 'Press Start 2P', cursive;
   text-align: center;
