@@ -38,36 +38,10 @@ header {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-/* div do titulo */
-.titles {
-  color: #ce6503;
-  font-family: garamond;
-  font-style: italic, bolder;
-  font-size: 2em;
-  text-shadow: 1px 1px gray;
-  margin-bottom: 30px;
-  margin-top: 10px;
-}
-/* se a tela tiver ao menos 250px esses estilos serão carregados */
+  align-items: top;
 
-.portfolio {
-  text-align: center;
-  font-family: 'Source Code Pro', monospace; 
-  font-size: 14px;
-  color: #ce6503;
-  margin-bottom: 30px;
-  margin-top: 10px;
-  text-shadow: none;
 }
 
-.port-Title{
-  font-family: 'Press Start 2P', cursive;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size: 16px;
-}
 /* menu */
 .menu {
   background-color: seashell;
@@ -112,10 +86,4 @@ a:hover {
 }
 
 /* titulo */
-
-.site-title{
-  font-family: 'Amatic SC', cursive;
-  font-size: 60px;
-}
-
 
