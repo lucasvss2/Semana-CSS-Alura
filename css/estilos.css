@@ -54,7 +54,7 @@ header {
 /* se a tela tiver ao menos 250px esses estilos serão carregados */
 .contato,
 .portfolio {
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
   padding: 40px;
   text-align: center;
